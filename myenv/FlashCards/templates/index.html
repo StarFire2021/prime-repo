@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content%}
+    <div id="card_title">Welcome to FlashCards!</div>
+    <div id="main_card_container">
+        <div id="upper_card">
+            <p class="card_text">{{upper}}</p>
+        </div>
+        <div id="lower_card">
+            <p class="card_text">{{lower}}</p>
+        </div>
+    </div>
+    <div id="button_container">
+        <form action="/edit">
+            <button class="button">Edit Cards</button>
+        </form>
+        <form>
+        <button class="button">Previous</button>
+        </form>
+        <form action="/next" method="post" name="next">
+        <input type="submit" class="button" value="Next">
+        </form>
+    </div>
+{%endblock content%}
