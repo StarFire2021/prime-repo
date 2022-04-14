@@ -1,15 +1,22 @@
+body {
+    background-color: grey;
+}
+ul {
+    list-style: none;
+}
 #content {
-    background-color: white;
+    background-color: grey;
     text-align: center;
 }
 #card_title {
     text-align: center;
     font-size: 5em;
+    color: lightblue;
 }
 #main_card_container {
     width: 60%;
     height: 600px;
-    background-color: white;
+    background-color: grey;
     margin: auto;
 }
 #upper_card {
@@ -20,7 +27,7 @@
     height: 49%;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: cornsilk;
+    background-color: lightgrey;
 }
 #lower_card {
     margin-top: .25em;
@@ -31,10 +38,10 @@
     height: 49%;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: azure;
+    background-color: lightblue;
 }
 #button_container {
-    background-color: white;
+    background-color: grey;
     margin: auto;
     padding-top: 5px;
 }
@@ -49,4 +56,25 @@
     background-color: aquamarine;
     font-size: 1.5em;
     margin: auto;
+}
+#lower_text {
+    visibility: hidden;
+}
+/*CSS for Edit Page*/
+#new_card {
+    background-color: lightgrey;
+    height: auto;
+    width: 50%;
+    margin: auto;
+}
+.my_form {
+    align-items: left;
+    font-size: 1.5em;
+}
+#add_card {
+   margin: 5px 1px;
+}
+.input_box {
+    height: 30px;
+    width: 60%;
 }

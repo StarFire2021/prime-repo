@@ -1,10 +1,17 @@
 {% extends "layout.html" %}
 {% block content%}
-<form action="" method="post" id='myForm'>
-    <label for="upper_card">Input front of card value:</label>
-    <input type="text" name="upper_card">
-    <label for="lower_card">Input back card value:</label>
-    <input type="text" name="lower_card">
-    <input type="submit" value="Submit">
+<form method="post" action="/">
+    <input type="submit" value="Return Home">
 </form>
+<div id="new_card">
+    <form action="/submit_new" method="post" class='my_form'>
+        <ul>
+            <li><label for="upper_card">Input front of card value:</label></li>
+            <li><input class="input_box" type="text" name="upper_card"></li>
+            <li><label for="lower_card">Input back card value:</label></li>
+            <li><input class="input_box" type="text" name="lower_card"></li>
+            <li><input id="add_card" type="submit" value="Submit"></li>
+        </ul>
+    </form>
+</div>
 {%endblock content%}
